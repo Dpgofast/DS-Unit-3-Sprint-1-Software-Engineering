@@ -27,7 +27,7 @@ class Product(object):
              and otherwise return "Very stealable!"'''
         yoink = (self.price / self.weight)
         
-        if yoink ==1:
+        if yoink >=1:
             return 'Very stealable!'
         if yoink <=1 or yoink==0.5:
             return 'Kinda stealable.'

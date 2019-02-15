@@ -230,9 +230,16 @@ career here, you'll have to answer the following:
 - What, in your opinion, is an important part of code reviews? That is, what is
   something you pay attention to when you review code, and that you appreciate
   when others do the same for your code?
+  
+  **In my opinion the most important part of code reviews would be a reviewer finding small mistakes
+  such as grammar and spelling errors. The linter typically will not catch those mistakes. So when reviewing code I will 
+  typically look for gramatical mistakes and spelling errors first. After inspecting for those I look for ways to improve the readability of the code. Inspecting for adequate comments and properly explained code can help all veiwers of the code easily understand what the code will accomplish. After insuring the code is well commented I look for ways to improve the cleanliness and operation of the code, using list comprehension and nested loops and 'for' verses 'while' loops correctly. Then In the very final inspection I run the code if possible and ensure that all the functions behave as expected. In general if a code reviewer covers these main points during their review of my code I'm pleased and appreciative.**
+
 - We have an awful lot of computers here, and it gets pretty confusing with
   slightly different things running on all of them. How could containers help us
   improve this situation?
+
+  **Containers help to quell the madness in using multiple different machines in a few distint ways. Firstly a container isolates any errant code that could harm your machine. It accomplishes this by running the programs and functions in a box similar to a virtual machine, virtual machines allow you to isolate everything and a container is no different. The container contains all the dependencies included needed to run the programs contained in the container so no further installs or updates are needed to run the program or functions. The modularity of containers makes it very simple to transfer helpful programs or functions to different machines without worry of the availability of a certain operating system or pre installed dependencies. Containers are the fast food of the programming world. 
 
 Answer both of these questions (baseline ~5 sentences) here in text.
 

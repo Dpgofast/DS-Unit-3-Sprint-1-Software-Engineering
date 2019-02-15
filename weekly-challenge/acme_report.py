@@ -1,6 +1,6 @@
 #!usr/bin/env python
 adjs= ['Awesome','Shiny','Impressive','Portable','Improved']
-noun= ['Anvil','Catapult','Disguise','Mousetrap', '???']
+noun= ['Anvil','Catapult','Disguise','Mousetrap','???']
 
 
 def generate_products(n=30):
@@ -12,7 +12,7 @@ def generate_products(n=30):
     tings = []
 
     for l in range(n):
-        name  = choice(adjs)+''+choice(noun)
+        name  = choice(adjs) + ' ' + choice(noun)
         price = randint(5,100)
         weight= randint(5,100)
         flamability=random()*2.5
