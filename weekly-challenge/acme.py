@@ -43,6 +43,7 @@ class Product:
             return print('...boom!')
         if blast>=50:
             return print('...BABOOM!!')
+    
     class BoxingGlove(Product):
         '''Change the default `weight` to 10 (but leave other defaults unchanged)
         - Override the `explode` method to always return "...it's a glove."
