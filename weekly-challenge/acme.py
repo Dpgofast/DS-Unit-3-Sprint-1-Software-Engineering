@@ -67,5 +67,3 @@ class Product:
             if self.weight>=15:
                return print('OUCH!')
     
-
-
