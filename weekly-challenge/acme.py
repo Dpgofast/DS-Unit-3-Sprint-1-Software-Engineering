@@ -28,11 +28,11 @@ class Product(object):
         yoink = (self.price / self.weight)
         
         if yoink ==1:
-            return print('Very stealable!')
+            return 'Very stealable!'
         if yoink <=1 or yoink==0.5:
-            return print('Kinda stealable.')
+            return 'Kinda stealable.'
         if yoink<=0.4 or yoink==0:
-            return print('Not so stealable.')
+            return 'Not so stealable.'
     
     def explode(self):
         '''calculates the flammability times the weight, and then
@@ -42,11 +42,11 @@ class Product(object):
 
         blast=self.flamability *self.weight
         if blast<= 9:
-            return print('...fizzle.')
+            return '...fizzle.'
         if blast==10 or blast <=49:
-            return print('...boom!')
+            return '...boom!'
         if blast>=50:
-            return print('...BABOOM!!')
+            return '...BABOOM!!'
     
 class BoxingGlove(Product):
     '''Change the default `weight` to 10 (but leave other defaults unchanged)
@@ -66,9 +66,9 @@ class BoxingGlove(Product):
     
     def punch(self):
         if self.weight<=4:
-            return print('That Tickles.')
+            return 'That Tickles.'
         if self.weight>=5 or self.weight==14:
-            return print('Hey that hurt!')
+            return 'Hey that hurt!'
         if self.weight>=15:
-            return print('OUCH!')
+            return 'OUCH!'
     

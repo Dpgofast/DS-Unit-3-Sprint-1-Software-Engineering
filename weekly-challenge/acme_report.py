@@ -18,6 +18,7 @@ def generate_products(n=30):
         flamability=random()*2.5
         stuff = Product(name,price,weight,flamability)
         tings.append(stuff)
+    return tings
 
 def inventory_report(tings):
     '''`inventory_report()` takes a list of products, and prints a "nice" summary'''
@@ -25,8 +26,12 @@ def inventory_report(tings):
     def mean (l):
         return sum(l)/len(l)
     m_price = mean([x.price for x in tings])
-    m_weights= mean([x.weights for x in tings])
+    m_weight= mean([x.weight for x in tings])
     m_flam = mean([x.flamability for x in tings])
+    print('Unique Product Names:', u_names)
+    print('Average Price:',m_price)
+    print('Average Weight:',m_weight)
+    print('Average Flamability:',m_flam)
 
 if __name__ == '__main__':
     inventory_report(generate_products())
